@@ -130,7 +130,7 @@
 </div>
 <?php if (!empty($page['block_medio'])): ?>
 <div class="sub-block-medio-comtent bg-page-medio">
-    <div class="main-container container main-menu-conosuer">
+    <div class="main-container container">
         <?php print render($page['block_medio']); ?>
     </div> 
 </div>
