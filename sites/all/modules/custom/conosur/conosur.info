@@ -1,0 +1,11 @@
+name = Conosur
+description = "Modulo tipo de configuracion conosur"
+package = eikon
+core = 7.x
+files[] = conosur.install
+files[] = conosur.module
+
+
+
+; Information added by Drupal.org packaging script on 2014-03-05
+project = "conosur"

@@ -112,21 +112,31 @@
     <?php endif; ?>
   </div>
 </header>
-<div class="sub-header-comtent row">
-    <div class="main-container container">
-        <?php if (!empty($page['nav_left'])): ?>
-        <div class="col-md-4">
-           <?php print render($page['nav_left']); ?>
+<div class="sub-header-comtent row bg-page">
+    <div class="bg">
+        <div class="main-container container main-menu-conosuer">
+            <?php if (!empty($page['nav_left'])): ?>
+            <div class="col-xs-6 col-md-4 menu-conusur-content">
+               <?php print render($page['nav_left']); ?>
+            </div>
+            <?php endif; ?>
+            <?php if (!empty($page['nav_content'])): ?>
+            <div class="col-xs-4 col-md-4">
+                <?php print render($page['nav_content']); ?>
+            </div>
+            <?php endif; ?>
         </div>
-        <?php endif; ?>
-        <?php if (!empty($page['nav_content'])): ?>
-        <div class="col-md-8">
-            <?php print render($page['nav_content']); ?>
-        </div>
-        <?php endif; ?>
     </div>
 </div>
-
+<?php if (!empty($page['block_medio'])): ?>
+<div class="sub-block-medio-comtent row bg-page-medio">
+    <div class="main-container container main-menu-conosuer">
+     
+            <?php print render($page['block_medio']); ?>
+    </div>    
+    
+</div>
+<?php endif; ?>
 <div class="main-container container">
 
   <header role="banner" id="page-header">

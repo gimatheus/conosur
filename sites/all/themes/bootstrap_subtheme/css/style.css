@@ -2,3 +2,197 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
+ .block-menu-conosur ul.nav{
+     
+ }
+  .main-menu-conosuer .menu-conusur-content{
+     background-color: #249b4c;height: 100%;margin: 0;
+     padding: 0;
+     position: relative;
+ }
+ .main-menu-conosuer{height: 100%;}
+ .main-menu-conosuer .region-nav-left,
+ .main-menu-conosuer .block-menu-conosur,
+ .main-menu-conosuer .block-menu-conosur .menu-name-main-menu
+ {height: 100%;}
+ .main-menu-conosuer .block-menu-conosur .menu-name-main-menu{
+     background: red;
+     height: 95%;
+     position: absolute;
+     background-color: #e68e29;
+     width: 100%; 
+     left: 0;
+     bottom: 0;
+     border-top: 1px dashed #ffffff;
+     border-top-stylee: dotted solid dashed; 
+ }
+ 
+ .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav {
+    margin: auto 0 0 0;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 90%;
+     
+ }
+ .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li{
+     text-align: right;
+     position: relative;
+     padding: 0;
+ }
+ .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a:hover{
+     background: none!important;
+     
+ }
+ 
+  .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a{
+      position: relative;
+    display: block;
+    padding: 5px 18px 5px 0;
+    width: 85%;
+    float: right;
+    margin: 3px 0;
+    text-align: right!important;
+    color: #ffffff;
+    border: 1px dashed #e68e29;
+    height: 31px;
+    font-weight: 100;
+      
+  }
+  .img-block-porcentaje .imageblock-image{
+      width: 100%;
+      height: auto;
+  }
+   .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a:hover{
+       background-image: url(img/btn_menu.png)!important;
+     -webkit-background-size: auto 58px !important;
+     -moz-background-size: auto 58px !important;
+     -o-background-size: auto 58px !important;
+      background-size: auto 58px !important;
+      color: #000000;
+      background-repeat: no-repeat !important;
+      background-position: right 0!important;
+  }
+.main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a.active{
+     background-image: url(img/btn_menu.png);
+     -webkit-background-size: auto 58px;
+     -moz-background-size: auto 58px;
+     -o-background-size: auto 58px;
+      background-size: auto 58px;
+      color: #000000;
+      background-repeat: no-repeat;
+      background-position: right -29px;
+ }
+ 
+ 
+
+
+ 
+ .page-node .bg-page{
+     width: 100%;
+ }
+ .page-node-1 .bg-page{
+     background-image: url(img/bgblockUno_.png);
+     background-position-y: inherit;
+    background-position: 0 0;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    background-position: center center;
+ }
+ .page-node .bg-page .bg{
+     width: 100%;
+     background-repeat:no-repeat;
+    background-position: 0 0;
+    background-position: right center;
+    height: 100%;
+ }
+ /* Large desktop */
+@media (min-width: 1200px) { 
+    .page-node .bg-page{
+        height: 540px;
+        border:1px solid red;
+    }
+    .page-node .bg-page .bg{
+       -webkit-background-size: 90% auto !important;
+       -moz-background-size: 90% auto !important;
+       -o-background-size: 90% auto !important;
+       background-size: 90% auto !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+   .page-node .bg-page{
+         height: 540px;
+         border:1px solid blue;
+   }
+   .page-node .bg-page .bg{
+       -webkit-background-size: 90% auto !important;
+       -moz-background-size: 90% auto !important;
+       -o-background-size: 90% auto !important;
+       background-size: 90% auto !important;
+    }
+}
+ @media (max-width: 992px) {
+    .page-node .bg-page{
+        border:1px solid  peru;
+        height: 540px;
+    }
+    .page-node .bg-page .bg{
+       -webkit-background-size: 90% auto !important;
+       -moz-background-size: 90% auto !important;
+       -o-background-size: 90% auto !important;
+       background-size: 90% auto !important;
+    }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    .page-node .bg-page{
+        height: 500px;
+        background-position: center center;
+        border:1px solid  green;
+    }
+    .page-node .bg-page .bg{
+       -webkit-background-size: 70% auto !important;
+       -moz-background-size: 70% auto !important;
+       -o-background-size: 70% auto !important;
+       background-size: 70% auto !important;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    .page-node .bg-page{
+        border:1px solid  yellow;
+        height: 400px
+    }
+    .page-node .bg-page .bg{
+       -webkit-background-size: 70% auto !important;
+       -moz-background-size: 70% auto !important;
+       -o-background-size: 70% auto !important;
+       background-size: 70% auto !important;
+    }
+    .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a{
+        font-size: 11px;
+    }
+}
+
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    
+    .page-node .bg-page{
+        border:1px solid purple;
+        height: 400px
+    }
+    .page-node .bg-page .bg{
+       -webkit-background-size: 70% auto !important;
+       -moz-background-size: 70% auto !important;
+       -o-background-size: 70% auto !important;
+       background-size: 70% auto !important;
+    }
+    .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a{
+        font-size: 10px;
+    }
+}
