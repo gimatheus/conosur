@@ -84,7 +84,12 @@
       background-repeat: no-repeat;
       background-position: right -29px;
  }
- 
+ .page-node-1 .bg-page-medio{
+     background-color: #249b4c;
+     background-image: url(img/color-md.jpg);
+     background-repeat: no-repeat;
+     background-position: left 0;
+ }
  
 
 

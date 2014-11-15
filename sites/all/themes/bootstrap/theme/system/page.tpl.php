@@ -112,7 +112,7 @@
     <?php endif; ?>
   </div>
 </header>
-<div class="sub-header-comtent row bg-page">
+<div class="sub-header-comtent bg-page">
     <div class="bg">
         <div class="main-container container main-menu-conosuer">
             <?php if (!empty($page['nav_left'])): ?>
@@ -129,12 +129,10 @@
     </div>
 </div>
 <?php if (!empty($page['block_medio'])): ?>
-<div class="sub-block-medio-comtent row bg-page-medio">
+<div class="sub-block-medio-comtent bg-page-medio">
     <div class="main-container container main-menu-conosuer">
-     
-            <?php print render($page['block_medio']); ?>
-    </div>    
-    
+        <?php print render($page['block_medio']); ?>
+    </div> 
 </div>
 <?php endif; ?>
 <div class="main-container container">
