@@ -2,6 +2,35 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
+ #navbar {
+     background-color: #ffffff;
+     border: none;
+ }
+ #navbar .navbar-header .navbar-btn{
+     width: 100%;
+     display: block;
+ }
+ .nenu-nav-rig{
+     float: right;
+     background: graytext;
+ }
+ #navbar .navbar-header .navbar-btn img{
+     width: 72%;
+    float: right;
+    margin: 10px 43px 0 0;
+ }
+ .shaw-menu {
+     width: 100%;
+     background-image: url(img/bg_supmenu.png);
+     background-position: 0 0;
+     -webkit-background-size: 100% auto;
+     -moz-background-size: 100% auto;
+     -o-background-size: 100% auto;
+      background-size: 100% auto;
+     margin: 0;
+     padding: 0;
+     height: 15px;
+ }
  .block-menu-conosur {
      padding-left: 15px;
      
@@ -237,7 +266,7 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
      
  }
  #block-uc-ajax-cart-delta-0 #ajaxCartUpdate {
-    padding: 20px 0 0 0;
+    padding: 0;
  }
  #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .remove-item-conosur {
      
@@ -403,7 +432,6 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         width: 70%;
     }
     .page-node .bg-page{
-        border:1px solid  peru;
         height: 540px;
     }
     .page-node .bg-page .bg{

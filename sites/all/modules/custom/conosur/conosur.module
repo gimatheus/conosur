@@ -40,6 +40,19 @@ function conosur_preprocess_page (&$vars, $hook) {
         
     }
 }
+function conosur_block_info(){
+    $block['block_up_header'] = array(
+        'info' => t('Reder sociales header superior'),
+        'cache' => DRUPAL_NO_CACHE,
+    );
+    return $block;
+}
+/**
+ * Implements hook_block_view(). $nodequeue = nodequeue_load_nodes(26);
+ */
+function conosur_block_view($block_key){
+    
+}
 
 function get_type_node ($nid) {
     $arraydatos = "";

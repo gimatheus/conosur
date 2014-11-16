@@ -75,7 +75,7 @@
 ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-header col-xs-6 col-md-4">
       <?php if ($logo): ?>
       <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -87,14 +87,16 @@
       <?php endif; ?>
 
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
+      </button>-->
     </div>
-
+    <div class="nenu-nav-rig col-xs-6 col-sm-6 col-md-6	col-lg-8 ">
+        <?php print render($page['menu_conosur_redes']); ?>
+    </div>
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
@@ -117,6 +119,7 @@
         <div class="main-container container main-menu-conosuer">
             <?php if (!empty($page['nav_left'])): ?>
             <div class="col-xs-6 col-md-4 menu-conusur-content">
+                <div class="shaw-menu"></div>
                <?php print render($page['nav_left']); ?>
             </div>
             <?php endif; ?>
