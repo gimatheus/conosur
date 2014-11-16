@@ -2,9 +2,122 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
- .block-menu-conosur{
+ .block-menu-conosur {
      padding-left: 15px;
      
+ }
+ .block h2.block-title{
+     display: none;
+ }
+ #block-uc-ajax-cart-delta-0 h2.block-title{
+     display: block;
+     background-color: #ff5046;
+     margin: 0;
+     height: 40px;
+     font-size: 18px;
+     font-weight: bold;
+     text-align: center;
+     padding: 10px 0 0 0;
+     color: #ffffff;
+ }
+ ul.quicktabs-tabs.quicktabs-style-navlist{
+     padding: 0;
+ }
+ .block-quicktabs .quicktabs-style-navlist li{
+     height: 40px;
+     border: none;
+ }
+ ul.quicktabs-tabs.quicktabs-style-navlist li.active{
+     border: none;
+ }
+ 
+ul.quicktabs-tabs.quicktabs-style-navlist li a{
+     display: block;
+     width: 100%;
+     height: 100%;  
+     background-repeat: repeat-x;
+     color: #ffffff!important;
+     padding: 10px 30px 0 15px;
+     text-align: left;
+     height: 40px;
+ }
+ .block-quicktabs .quicktabs-style-navlist li a#quicktabs-tab-tabs_productos-0{
+    background-image: url(img/tab-0.jpg); 
+ }
+ .block-quicktabs .quicktabs-style-navlist li a#quicktabs-tab-tabs_productos-1{
+    background-image: url(img/tab-1.jpg); 
+ }
+ .block-quicktabs .quicktabs-style-navlist li a#quicktabs-tab-tabs_productos-2{
+    background-image: url(img/tab-2.jpg); 
+ }
+ .block-quicktabs .quicktabs-style-navlist li a#quicktabs-tab-tabs_productos-3{
+    background-image: url(img/tab-3.jpg); 
+ }
+ .block-quicktabs .quicktabs-style-navlist li a#quicktabs-tab-tabs_productos-4{
+    background-image: url(img/tab-4.jpg); 
+ }
+ .block-quicktabs .quicktabs-style-navlist li a#quicktabs-tab-tabs_productos-5{
+    background-image: url(img/tab-5.jpg); 
+ }
+ .block-quicktabs .quicktabs-style-navlist li a#quicktabs-tab-tabs_productos-6{
+    background-image: url(img/tab-6.jpg); 
+ }
+ .quicktabs_main.quicktabs-style-navlist{
+     background: none;
+     border: none;
+ }
+ .uc-catalog-itmes .views-row {
+      position: relative;padding-bottom: 56px;
+ }
+ .uc-catalog-itmes .views-row .img-item img{
+     width: 100%; height: auto;
+     
+ }
+ .uc-catalog-itmes .views-row h2.titulo-item{
+     font-size: 18px; font-weight: 400; margin: 3px 0;height: 46px;
+ }
+ .uc-catalog-itmes .views-row p.p-item {
+     font-size: 12px; color: #CBCBCB; display: block;height: 41px;
+ }
+  .uc-catalog-itmes .views-row .list-add-to-cart {
+      background-color: #ffffff;
+      background-image: url(img/add-card.jpg);
+      text-indent: -9999px;
+    width: 30px;
+    height: 27px;
+    border: none;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 23px;
+    bottom: 18px; 
+ }
+ .uc-catalog-itmes .view-header{
+     height: 40px;
+     margin: 0 0 20px 0;
+     background-image: url(img/tab-0.jpg); 
+      background-repeat: repeat-x;
+     color: #ffffff!important;
+     padding: 10px 30px 0 15px;
+     text-align: center;
+ }
+ .page-node-1 .col-sm-3{
+     position: relative;
+ }
+ 
+ #quicktabs-container-tabs_productos{
+     margin: 0;padding: 0;
+ }
+ .uc-catalog-itmes .views-row  .presio-item{
+     position: absolute;
+    left: 16px;
+    bottom: 14px;
+    color: #5E5E5E;
+    font-weight: bold;
+    font-size: 18px;
+ }
+ .uc-catalog-itmes .views-row .list-add-to-cart:hover{
+      background-image: url(img/add-card.jpg);
+      background-position: 0 0;
  }
   .main-menu-conosuer .menu-conusur-content{
      background-color: #249b4c;height: 100%;margin: 0 0 0 15px;
@@ -116,10 +229,111 @@
     height: 100%;
  }
  /* Large desktop */
+ .quicktabs_main.quicktabs-style-navlist {
+     background-color:  #f5f5f5;
+ }
+ #block-uc-ajax-cart-delta-0 {
+     background-color:  #f5f5f5;
+     
+ }
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate {
+    padding: 20px 0 0 0;
+ }
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .remove-item-conosur {
+     
+ }
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .remove-item-conosur a{
+    text-indent: -9999px;
+    background-image: url(img/boton-menos.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;display: block;
+    margin: 1px 0;
+ }
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-block-summary-total{
+     text-align: right;
+     height: 30px;
+     font-weight: bold;
+     font-size: 18px;
+     width: 75%;
+     margin: 5px auto;
+ }
+  #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-block-item-qty div{
+     min-height: 30px;
+      padding: 5px 2px;
+     
+ }
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-item-product{
+     /*width: 65%;*/
+ }
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .qty{
+    /* width: 25%;*/
+ }
+ .cart-item-product a{
+     color: #000000;
+ }
+ .cart-block-summary-total-tiempo {
+     width: 100%;
+     height: 30px;
+     font-size: 12px;
+     margin: 0;
+     padding: 7px 0 5px 29px;
+     background-image: url('img/tiempo_fac.png');
+     background-repeat: no-repeat;
+     background-position:  7px center;
+     background-color: #e1e1e1;
+ }
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate ul.links{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-block-view-cart {
+     display: none;
+     
+ }
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-block-checkout a{
+    background-image: url(img/btn_boton.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    background-position: center center;
+    width: 100%;
+    display: block;
+    height: 40px;
+    text-indent: -9999px;
+ }
 @media (min-width: 1200px) { 
+    .page-node-1 .cart-empty{
+        background-image: url(img/agrega_pedido_domicilios.png);
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+         background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: 0 0 ;
+        height: 74px;
+        width: 100%;
+        text-indent: -9999px;
+    }
+    .contenido-conosur .col-sm-3 {
+        padding-left: 0;
+    }
+    .contenido-conosur .col-sm-9 {
+        padding-right:0;
+    }
+    ul.quicktabs-tabs.quicktabs-style-navlist{
+        width: 25%;
+    }
+    .quicktabs_main.quicktabs-style-navlist {
+        width: 75%;
+    }
     .page-node .bg-page{
         height: 540px;
-        border:1px solid red;
     }
     .page-node .bg-page .bg{
        -webkit-background-size: 90% auto !important;
@@ -129,9 +343,32 @@
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
+    .page-node-1 .cart-empty{
+        background-image: url(img/agrega_pedido_domicilios.png);
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+         background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: 0 0 ;
+        height: 74px;
+        width: 100%;
+        text-indent: -9999px;
+    }
+    .contenido-conosur .col-sm-3 {
+        padding-left: 0;
+    }
+    .contenido-conosur .col-sm-9 {
+        padding-right:0;
+    }
+    ul.quicktabs-tabs.quicktabs-style-navlist{
+        width: 30%;
+    }
+    .quicktabs_main.quicktabs-style-navlist {
+        width: 70%;
+    }
    .page-node .bg-page{
          height: 540px;
-         border:1px solid blue;
    }
    .page-node .bg-page .bg{
        -webkit-background-size: 90% auto !important;
@@ -141,6 +378,30 @@
     }
 }
  @media (max-width: 992px) {
+     .page-node-1 .cart-empty{
+        background-image: url(img/agrega_pedido_domicilios.png);
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+         background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: 0 0 ;
+        height: 74px;
+        width: 100%;
+        text-indent: -9999px;
+    }
+     .contenido-conosur .col-sm-3 {
+        padding-left: 0;
+    }
+    .contenido-conosur .col-sm-9 {
+        padding-right:0;
+    }
+     ul.quicktabs-tabs.quicktabs-style-navlist{
+        width: 30%; 
+    }
+    .quicktabs_main.quicktabs-style-navlist {
+        width: 70%;
+    }
     .page-node .bg-page{
         border:1px solid  peru;
         height: 540px;
@@ -153,11 +414,34 @@
     }
 }
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 979px) {
+    .page-node-1 .cart-empty{
+        background-image: url(img/agrega_pedido_domicilios.png);
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+         background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: 0 0 ;
+        height: 74px;
+        width: 100%;
+        text-indent: -9999px;
+    }
+    .contenido-conosur .col-sm-3 {
+        padding-left: 0;
+    }
+    .contenido-conosur .col-sm-9 {
+        padding-right:0;
+    }
+    ul.quicktabs-tabs.quicktabs-style-navlist{
+        width: 30%;
+    }
+    .quicktabs_main.quicktabs-style-navlist {
+        width: 70%;
+    }
     .page-node .bg-page{
         height: 500px;
         background-position: center center;
-        border:1px solid  green;
     }
     .page-node .bg-page .bg{
        -webkit-background-size: 70% auto !important;
@@ -169,8 +453,27 @@
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
+    .page-node-1 .cart-empty{
+        background-image: none;
+        height: 40px;
+        background-color: #ff5046;
+        text-indent: 0;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px; font-weight: bold;
+        padding: 5px 0 0 0;
+        
+    }
+    .uc-catalog-itmes .views-row{
+        margin: 5px auto;
+    }
+    ul.quicktabs-tabs.quicktabs-style-navlist{
+        width: 50%;
+    }
+    .quicktabs_main.quicktabs-style-navlist {
+        width: 50%;
+    }
     .page-node .bg-page{
-        border:1px solid  yellow;
         height: 400px
     }
     .page-node .bg-page .bg{
@@ -187,9 +490,16 @@
  
 /* Landscape phones and down */
 @media (max-width: 480px) { 
-    
+    .uc-catalog-itmes .views-row{
+        margin: 5px auto;
+    }
+    ul.quicktabs-tabs.quicktabs-style-navlist{
+        width: 50%;
+    }
+    .quicktabs_main.quicktabs-style-navlist {
+        width: 50%;
+    }
     .page-node .bg-page{
-        border:1px solid purple;
         height: 400px
     }
     .page-node .bg-page .bg{

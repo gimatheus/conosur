@@ -17,7 +17,7 @@ function conosur_menu() {
 /**
  * Implements hook_preprocess_page()
  */
-function conosur_preprocess_page (&$vars) {
+function conosur_preprocess_page (&$vars, $hook) {
     $argUno =  arg(0);
     if ($argUno == 'node') {
         $tipe = get_type_node (arg(1));

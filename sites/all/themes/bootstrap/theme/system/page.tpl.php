@@ -145,8 +145,7 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-  <div class="row">
-
+  <div class="contenido-conosur">
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_first']); ?>
@@ -164,7 +163,7 @@
         <h1 class="page-header"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
+      <?php //print $messages; ?>
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>

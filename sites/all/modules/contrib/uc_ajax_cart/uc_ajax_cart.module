@@ -368,11 +368,11 @@ function uc_ajax_cart_block_view($delta) {
     else {
       $load_on_page_view_class = variable_get('uc_ajax_cart_cart_cached_load', 0) ? ' class="load-on-view"' : '';
       if ($hasItems == TRUE) {
-        $content['content'] = '<div id="ajaxCartUpdate" ' . $load_on_page_view_class . '>' . theme('uc_ajax_cart_block_content', array('items' => $cartContent)) . '</div>';
-      }
-      else {
-        // TODO Please change this theme call to use an associative array for the $variables parameter.
-        $content['content'] = '<div id="ajaxCartUpdate" ' . $load_on_page_view_class . '>' . theme('uc_ajax_cart_block_content_empty') . '</div>';
+         // print_r($cartContent);
+          $content['content'] = '<div id="ajaxCartUpdate" ' . $load_on_page_view_class . '>' . theme('uc_ajax_cart_block_content', array('items' => $cartContent)) . '</div>';
+      } else {
+          // TODO Please change this theme call to use an associative array for the $variables parameter.
+          $content['content'] = '<div id="ajaxCartUpdate" ' . $load_on_page_view_class . '>' . theme('uc_ajax_cart_block_content_empty') . '</div>';
       }
     }
     return $content;
