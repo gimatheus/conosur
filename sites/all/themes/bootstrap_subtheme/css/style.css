@@ -12,7 +12,6 @@
  }
  .nenu-nav-rig{
      float: right;
-     background: graytext;
  }
  #navbar .navbar-header .navbar-btn img{
      width: 72%;
@@ -21,7 +20,7 @@
  }
  .shaw-menu {
      width: 100%;
-     background-image: url(img/bg_supmenu.png);
+     background-image: url(img/sombraM.png);
      background-position: 0 0;
      -webkit-background-size: 100% auto;
      -moz-background-size: 100% auto;
@@ -29,7 +28,8 @@
       background-size: 100% auto;
      margin: 0;
      padding: 0;
-     height: 15px;
+     height: 7%;
+     background-repeat: no-repeat;
  }
  .block-menu-conosur {
      padding-left: 15px;
@@ -149,47 +149,35 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
       background-position: 0 0;
  }
   .main-menu-conosuer .menu-conusur-content{
-     background-color: #249b4c;height: 100%;margin: 0 0 0 15px;
+     background-color: #e68e29;height: 100%;margin: 0 0 0 15px;
      padding: 0;
      position: relative;
  }
  .main-menu-conosuer{height: 100%;}
  .main-menu-conosuer .region-nav-left,
- .main-menu-conosuer .block-menu-conosur,
- .main-menu-conosuer .block-menu-conosur .menu-name-main-menu
- {height: 100%;}
- .main-menu-conosuer .block-menu-conosur .menu-name-main-menu{
-     background: red;
-     height: 95%;
-     position: absolute;
-     background-color: #e68e29;
-     width: 100%; 
-     left: 0;
-     bottom: 0;
-     border-top: 1px dashed #ffffff;
-     border-top-stylee: dotted solid dashed; 
- }
- 
- .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav {
-    margin: auto 0 0 0;
-    bottom: 0;
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-    width: 90%;
+ .main-menu-conosuer .block-menu-conosur {
      
  }
- .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li{
+ .naranja-menu .nav {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    padding: 0 3% 0 0;
+    z-index: 3;
+    background-color: #e68e29;
+ }
+ .naranja-menu .nav li{
      text-align: right;
      position: relative;
      padding: 0;
+     background-color:  #e68e29;
  }
- .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a:hover{
+ .naranja-menu .nav li a:hover{
      background: none!important;
      
  }
  
-  .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a{
+  .naranja-menu .nav li a{
       position: relative;
     display: block;
     padding: 5px 18px 5px 0;
@@ -207,25 +195,17 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
       width: 100%;
       height: auto;
   }
-   .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a:hover{
-       background-image: url(img/btn_menu.png)!important;
-     -webkit-background-size: auto 58px !important;
-     -moz-background-size: auto 58px !important;
-     -o-background-size: auto 58px !important;
-      background-size: auto 58px !important;
-      color: #000000;
-      background-repeat: no-repeat !important;
-      background-position: right 0!important;
-  }
-.main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a.active{
+ 
+.naranja-menu .nav li a.active,
+.naranja-menu .nav li a:hover{
      background-image: url(img/btn_menu.png);
-     -webkit-background-size: auto 58px;
-     -moz-background-size: auto 58px;
-     -o-background-size: auto 58px;
-      background-size: auto 58px;
-      color: #000000;
-      background-repeat: no-repeat;
-      background-position: right -29px;
+     background-repeat: no-repeat;
+     background-position: right center;
+     border: 1px dashed #ffffff;
+     border-color: #ffffff;
+     -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
  }
  .page-node-1 .bg-page-medio{
      background-color: #249b4c;
@@ -233,15 +213,20 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
      background-repeat: no-repeat;
      background-position: left 0;
  }
- 
-
-
- 
  .page-node .bg-page{
      width: 100%;
  }
+.page-node-26 .bg-page{
+     background-image: url(img/img_home.jpg);
+     background-position-y: inherit;
+    background-position: 0 0!important;
+   -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+ }
  .page-node-1 .bg-page{
-     background-image: url(img/bgblockUno_.png);
+     
      background-position-y: inherit;
     background-position: 0 0;
     -webkit-background-size: 100% auto;
@@ -250,20 +235,13 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
     background-size: 100% auto;
     background-position: center center;
  }
- .page-node .bg-page .bg{
-     width: 100%;
-     background-repeat:no-repeat;
-    background-position: 0 0;
-    background-position: right center;
-    height: 100%;
- }
+ 
  /* Large desktop */
  .quicktabs_main.quicktabs-style-navlist {
      background-color:  #f5f5f5;
  }
  #block-uc-ajax-cart-delta-0 {
-     background-color:  #f5f5f5;
-     
+     background-color:  #f5f5f5; 
  }
  #block-uc-ajax-cart-delta-0 #ajaxCartUpdate {
     padding: 0;
@@ -289,10 +267,9 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
      width: 75%;
      margin: 5px auto;
  }
-  #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-block-item-qty div{
+ #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-block-item-qty div{
      min-height: 30px;
-      padding: 5px 2px;
-     
+     padding: 5px 2px;    
  }
  #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-item-product{
      /*width: 65%;*/
@@ -321,7 +298,6 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
  }
  #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-block-view-cart {
      display: none;
-     
  }
  #block-uc-ajax-cart-delta-0 #ajaxCartUpdate .cart-block-checkout a{
     background-image: url(img/btn_boton.png);
@@ -335,8 +311,194 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
     display: block;
     height: 40px;
     text-indent: -9999px;
+}
+.buttom_top {
+     float: right;
+     padding: 39px 0 0 0;
+     margin: 0;
+     position: relative;
  }
+ .buttom_top .domicilios_header{
+    background-image: url(img/domicilios_header.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+     -webkit-background-size: 98% auto;
+    -moz-background-size: 98% auto;
+    -o-background-size: 98% auto;
+     background-size: 98% auto;    
+    position: absolute;
+    width: 85px;
+    height: 70px;
+    bottom: -34px;
+    right: -70px; 
+ }
+ .buttom_top .domicilios_header a{
+     display: block;
+     width: 100%;
+     height: 100%;
+ }
+ .registroheader {
+     padding: 0;margin: 0 0 5px 0;
+ }
+.buttom_top .likn-registro-header {
+     display: block;
+     width: 122px;
+     height: 30px;
+     background-image: url(img/registrate_header.png);
+     background-repeat: no-repeat;
+     background-position:  0 0;
+     -webkit-background-size: 98% auto;
+    -moz-background-size: 98% auto;
+    -o-background-size: 98% auto;
+     background-size: 98% auto;
+ }
+ .buttom_top .likn-registro-header:hover {
+     background-position-y: -30px;
+ }
+ .rede-conosur{
+     position: relative;
+ }
+ .rede-conosur .likn-item{
+     display: block;
+     width: 30px;
+     height: 30px;
+     background-repeat: no-repeat;
+     background-position:  0 0;
+     -webkit-background-size: 98% auto;
+    -moz-background-size: 98% auto;
+    -o-background-size: 98% auto;
+     background-size: 98% auto;
+     margin: 0 5px 5px 0;
+ }
+ .rede-conosur .likn-item:hover{
+     background-position-y: -30px
+ }
+ .rede-conosur .youtubeTop{
+     background-image: url(img/bt_video_header.png);
+ }
+ .rede-conosur .facebookTop{
+      background-image: url(img/bt_fb_header.png);
+ }
+.rede-conosur .twitterTop{
+     background-image: url(img/bt_tw_header.png);
+ }
+.rede-conosur .instagram{
+     background-image: url(img/bt_inst_header.png);
+ }
+ .rede-conosur div{
+     margin: 0;
+     padding: 0;
+ }
+ .conten-menu-md {
+     overflow: hidden;
+     position: relative;
+     height: 100%;
+ }
+ .block-registro-conosur {
+     position: absolute;
+     right: 0;
+     width: 100%;
+     background-color: red;
+ }
+ .styleimg,
+ .styleimgheight{
+     margin: 0;
+     padding: 0;
+ }
+ .styleimg img.imageblock-image {
+     width: 100%;
+     height: auto;
+               
+ }
+ .styleimgheight img.imageblock-image{
+    height: auto;
+    width: 84%;
+ }
+ .page-node-26 .seccion-md {
+     background-color: #249b4c;
+ }
+ .clear {
+     clear: both;
+ }
+ .colorfooter {
+     width: 100%;
+     height: 54px;
+     background-image: url(img/colorfooter.jpg);
+     background-repeat: repeat-x;
+     margin: 10px 0 0 0;
+ }
+ .footer-content {
+     background-color: #cac9c9;
+ }
+ .texto-p-uno {
+     margin: 25px 0 0 0;
+ }
+ .footer-text { display: block;    
+     color: #ffffff;
+     text-align: center;
+     font-size: 11px;
+ }
+ .img-eikon {
+     margin: 20px auto;
+     text-align: center;
+ }
+.navbar-toggle{
+     background-image: url(img/icon1_paso3.png);
+     background-repeat: no-repeat;
+     background-position:  center center;
+     -webkit-background-size: 98% auto;
+    -moz-background-size: 98% auto;
+    -o-background-size: 98% auto;
+     background-size: 98% auto;
+     z-index: 20;
+ }
+.naranja-menu {
+     height: 92%;
+     position: relative;
+     background-color: #e68e29;
+     width: 100%; 
+     border-top-stylee: dotted solid dashed; 
+ }
+.page-node .bg-page .bg{
+       -webkit-background-size: auto 100%;
+       -moz-background-size: auto 100%;
+       -o-background-size: auto 100%;
+       background-size: auto 100%;
+       background-repeat:no-repeat;
+       background-position: right center;
+       height: 100%;
+       width: 100%;
+}
+.page-node .bg-page{
+    position: relative;
+} 
+.menuflolefconosur{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    min-height: 54px;
+    padding: 0 4% 0 0;
+    background-image: url(img/bg-black-trans.png);
+}
+.menuflolefconosur .navbar{
+    margin: 0;
+}
+.menuflolefconosur .navbar a{
+    color: #ffffff; font-weight: 200;font-size: 14px;
+}
+.menuflolefconosur .navbar a:hover{background-color: none !important; color:#e6902c; }
+/*navbar-toggl*/
+.navbar-inverse{
+    background-color: #249b4c!important;
+}
 @media (min-width: 1200px) { 
+    .naranja-menu .nav {
+        bottom: 20px;
+    }
+    #block-imageblock-6 img.imageblock-image{
+        height: auto;
+        width: 94%;
+    }
     .page-node-1 .cart-empty{
         background-image: url(img/agrega_pedido_domicilios.png);
         -webkit-background-size: 100% auto;
@@ -348,6 +510,12 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         height: 74px;
         width: 100%;
         text-indent: -9999px;
+    }
+    .red-uno a{
+        float: right
+    }
+    .red-dos a{
+        float: left
     }
     .contenido-conosur .col-sm-3 {
         padding-left: 0;
@@ -362,16 +530,17 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         width: 75%;
     }
     .page-node .bg-page{
-        height: 540px;
-    }
-    .page-node .bg-page .bg{
-       -webkit-background-size: 90% auto !important;
-       -moz-background-size: 90% auto !important;
-       -o-background-size: 90% auto !important;
-       background-size: 90% auto !important;
+        height: 512px
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
+    .naranja-menu .nav {
+        bottom: 20px;
+    }
+    #block-imageblock-6 img.imageblock-image{
+        height: auto;
+        width: 71%;
+    }
     .page-node-1 .cart-empty{
         background-image: url(img/agrega_pedido_domicilios.png);
         -webkit-background-size: 100% auto;
@@ -383,6 +552,12 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         height: 74px;
         width: 100%;
         text-indent: -9999px;
+    }
+    .red-uno a{
+        float: right
+    }
+    .red-dos a{
+        float: left
     }
     .contenido-conosur .col-sm-3 {
         padding-left: 0;
@@ -397,16 +572,17 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         width: 70%;
     }
    .page-node .bg-page{
-         height: 540px;
+         height: 465px;
    }
-   .page-node .bg-page .bg{
-       -webkit-background-size: 90% auto !important;
-       -moz-background-size: 90% auto !important;
-       -o-background-size: 90% auto !important;
-       background-size: 90% auto !important;
-    }
 }
  @media (max-width: 992px) {
+     .naranja-menu .nav {
+        bottom: 10px; 
+    }
+     #block-imageblock-6 img.imageblock-image{
+        height: auto;
+        width: 72%;
+    }
      .page-node-1 .cart-empty{
         background-image: url(img/agrega_pedido_domicilios.png);
         -webkit-background-size: 100% auto;
@@ -432,17 +608,28 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         width: 70%;
     }
     .page-node .bg-page{
-        height: 540px;
+        height: 390px;
     }
-    .page-node .bg-page .bg{
-       -webkit-background-size: 90% auto !important;
-       -moz-background-size: 90% auto !important;
-       -o-background-size: 90% auto !important;
-       background-size: 90% auto !important;
+    .red-uno a{
+        float: right
+    }
+    .red-dos a{
+        float: left
     }
 }
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+    .naranja-menu .nav {
+        bottom: 10px;
+    }
+    #block-imageblock-6 img.imageblock-image{
+        height: auto;
+        width: 71%;
+    }
+    .page-node-26 .bg-page .bg{
+       /* background-image: none!important;*/
+    }
     .page-node-1 .cart-empty{
         background-image: url(img/agrega_pedido_domicilios.png);
         -webkit-background-size: 100% auto;
@@ -468,19 +655,48 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         width: 70%;
     }
     .page-node .bg-page{
-        height: 500px;
-        background-position: center center;
+        height: 317px;
     }
-    .page-node .bg-page .bg{
-       -webkit-background-size: 70% auto !important;
-       -moz-background-size: 70% auto !important;
-       -o-background-size: 70% auto !important;
-       background-size: 70% auto !important;
-    }
+    .red-uno a{
+     float: right
+ }
+ .red-dos a{
+     float: left
+ }
 }
- 
+@media (min-width: 768px) {
+  .navbar-inverse-conosur .navbar-toggle {
+    display: none;
+  }
+ .nav{
+      display: block;
+  } 
+  .sombraList a,.sombraList a:hover{
+      background-image: url(img/separadorUno.png);
+        background-repeat: no-repeat;
+        background-position: right center ;
+  }
+  
+}
+@media (max-width: 768px) {
+   .nav{
+      display: none;
+  }
+}
+/*.menuflolefconosur{*/
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
+     .naranja-menu .nav {
+        top: 45px;
+         min-height: 299px;
+    }
+    #block-imageblock-6 img.imageblock-image{
+        height: auto;
+        width: 70%;
+    }
+    .page-node-26 .bg-page .bg{
+       /* background-image: none!important;*/
+    }
     .page-node-1 .cart-empty{
         background-image: none;
         height: 40px;
@@ -502,22 +718,28 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         width: 50%;
     }
     .page-node .bg-page{
-        height: 400px
+         height: 190px
     }
-    .page-node .bg-page .bg{
-       -webkit-background-size: 70% auto !important;
-       -moz-background-size: 70% auto !important;
-       -o-background-size: 70% auto !important;
-       background-size: 70% auto !important;
-    }
-    .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a{
+    .naranja-menu .nav li a{
         font-size: 11px;
     }
+    .red-uno a{
+        float: left;
+    }
+    .red-dos a{
+        float: left;
+    }
 }
-
- 
 /* Landscape phones and down */
 @media (max-width: 480px) { 
+     .naranja-menu .nav {
+        top: 50px;
+        min-height: 299px;
+    }
+    #block-imageblock-6 img.imageblock-image{
+        height: auto;
+        width: 70%;
+    }
     .uc-catalog-itmes .views-row{
         margin: 5px auto;
     }
@@ -528,15 +750,15 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         width: 50%;
     }
     .page-node .bg-page{
-        height: 400px
+        height: 133px;
     }
-    .page-node .bg-page .bg{
-       -webkit-background-size: 70% auto !important;
-       -moz-background-size: 70% auto !important;
-       -o-background-size: 70% auto !important;
-       background-size: 70% auto !important;
-    }
-    .main-menu-conosuer .block-menu-conosur .menu-name-main-menu .nav li a{
+    .naranja-menu .nav li a{
         font-size: 10px;
+    }
+    .red-uno a{
+        float: left;
+    }
+    .red-dos a{
+        float: left;
     }
 }

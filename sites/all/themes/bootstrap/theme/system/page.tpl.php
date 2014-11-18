@@ -94,7 +94,7 @@
         <span class="icon-bar"></span>
       </button>-->
     </div>
-    <div class="nenu-nav-rig col-xs-6 col-sm-6 col-md-6	col-lg-8 ">
+    <div class="nenu-nav-rig col-xs-6 col-sm-6 col-md-8	col-lg-8 ">
         <?php print render($page['menu_conosur_redes']); ?>
     </div>
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
@@ -118,24 +118,53 @@
     <div class="bg">
         <div class="main-container container main-menu-conosuer">
             <?php if (!empty($page['nav_left'])): ?>
-            <div class="col-xs-6 col-md-4 menu-conusur-content">
+            <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 menu-conusur-content navbar-inverse-conosur">
                 <div class="shaw-menu"></div>
-               <?php print render($page['nav_left']); ?>
+                <div class="naranja-menu">
+                    <button id="navbar-toggle-menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                   <?php print render($page['nav_left']); ?>
+                    <div class="clear"></div>
+                </div>    
             </div>
             <?php endif; ?>
-            <?php if (!empty($page['nav_content'])): ?>
-            <div class="col-xs-4 col-md-4">
-                <?php print render($page['nav_content']); ?>
+            <div class="conten-menu-md col-xs-5 col-sm-5 col-md-7 col-lg-7">
+                <div class="block-registro-conosur">
+                    <?php if (!empty($page['block_desple_login'])): ?>
+                    <?php print render($page['block_desple_login']); ?>
+                    <?php endif; ?>
+                </div>
+                <?php if (!empty($page['nav_content'])): ?>
+                <?php  print render($page['nav_content']); ?>
+                <?php endif; ?>
             </div>
-            <?php endif; ?>
         </div>
     </div>
+    <?php if (!empty($page['nav_content_menu'])): ?>
+    <?php  print render($page['nav_content_menu']); ?>
+    <?php endif; ?>
 </div>
 <?php if (!empty($page['block_medio'])): ?>
 <div class="sub-block-medio-comtent bg-page-medio">
     <div class="main-container container">
         <?php print render($page['block_medio']); ?>
     </div> 
+</div>
+<?php endif; ?>
+<?php if (!empty($page['block_md'])): ?>
+<div class="seccion-md">
+    <?php print render($page['block_md']); ?>
+    <div class="clear"></div>
+</div>
+<?php endif; ?>
+<?php if (!empty($page['block_md_dos'])): ?>
+<div class="seccion-md-dos">
+    <?php print render($page['block_md_dos']); ?>
+    <div class="clear"></div>
 </div>
 <?php endif; ?>
 <div class="main-container container">
@@ -187,6 +216,12 @@
 
   </div>
 </div>
+<div class="colorfooter"></div>
+<div class="footer-content">
 <footer class="footer container">
   <?php print render($page['footer']); ?>
+    <div class="img-eikon">
+        <img src="<?php print get_url_page() .drupal_get_path('theme', 'bootstrap_subtheme') . '/css/img/eikon_footer.png' ?>" />
+    </div>
 </footer>
+</div>
