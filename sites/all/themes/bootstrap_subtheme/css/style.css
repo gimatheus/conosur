@@ -1,4 +1,38 @@
 /**
+ * Styles login and register and facebook connect
+ */
+.block.block-user.clearfix {
+    width: 250px;
+    height: 245px;
+    background: #a9a131;
+}
+
+.block.block-user.clearfix ul,  .block.block-user.clearfix label{
+    display:none;
+}
+
+.block.block-user.clearfix .btn.btn-default.form-submit {
+    background-image: url(img/conosur_login.png);
+    width: 160px;
+    height: 43px;
+    margin: 40px 0px 35px 35px;
+    font-size: 0px;
+    border: 0px;
+    border-radius: 0;
+    box-shadow: none;
+}
+.block.block-user.clearfix .form-control.form-text.required{
+    background: none;
+    width: 210px;
+    height: 30px;
+    border-radius: 0;
+    border-color: #ffffff;
+    margin: 0px 0px 0px 20px;
+}
+.block.block-user.clearfix .btn.btn-default.form-submit:hover,  .block.block-user.clearfix .btn.btn-default.form-submit:focus {
+    background-position: 0;
+}
+/**
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */

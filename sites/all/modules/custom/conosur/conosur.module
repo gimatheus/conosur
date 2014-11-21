@@ -51,7 +51,19 @@ function conosur_block_info(){
         'info' => t('bloque menu nosotros'),
         'cache' => DRUPAL_NO_CACHE,
     );
+    $block['block_register_user'] = array(
+        'info' => t('bloque registrar usuarios'),
+        'cache' => DRUPAL_NO_CACHE,
+    );
     return $block;
+}
+/**
+ * Block register callback
+ */
+function conosur_block_register_callback() {
+   $reg_form = drupal_get_form('user_register_form');
+   $output = drupal_render($reg_form);
+   return $output;
 }
 /**
  * Implements hook_block_view(). $nodequeue = nodequeue_load_nodes(26);
@@ -59,6 +71,10 @@ function conosur_block_info(){
 function conosur_block_view($block_key){
     $block = array();
     switch ($block_key){ 
+        case 'block_register_user':
+            $block['subject'] = t('NUEVO CLIENTE');
+            $block['content'] = conosur_block_register_callback();
+            break;
         case 'block_menu_nosotros':
             $items = array();
             $menu_tree = menu_tree_all_data('menu-nosotros');
