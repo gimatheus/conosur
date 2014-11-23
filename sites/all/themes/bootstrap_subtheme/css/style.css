@@ -363,8 +363,9 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
     position: absolute;
     width: 85px;
     height: 70px;
-    bottom: -34px;
-    right: -70px; 
+    bottom: -40px;
+    right: -70px;
+    z-index: 10;
  }
  .buttom_top .domicilios_header a{
      display: block;
@@ -432,7 +433,6 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
      position: absolute;
      right: 0;
      width: 100%;
-     background-color: red;
  }
  .styleimg,
  .styleimgheight{
@@ -524,6 +524,13 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
 /*navbar-toggl*/
 .navbar-inverse{
     background-color: #249b4c!important;
+}
+#block-user-login h2.block-title{
+    display: block;
+    color: #ffffff;
+    font-weight: 100;
+    padding: 10px 0 0 15px;
+    margin: 0 0 25px 0;
 }
 @media (min-width: 1200px) { 
     .naranja-menu .nav {
@@ -796,3 +803,107 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
         float: left;
     }
 }
+.seccion-md-dos {
+    position: relative;
+}
+.form-hv {
+    display: none;
+}
+.for-hv form{  
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.bd-map{
+    margin: 10px auto;
+}
+.styleimg-right{
+   overflow: hidden; 
+}
+.styleimg-right .block-image{
+    height: 100%;
+    width: 100%;
+}
+
+#block-conosur-block-map-locales {
+    background-color: #73ae44;
+}
+.imgblock-conosur .block-image {
+    width: 100%;
+    height: auto;
+        
+}
+.styleimg-right {
+    margin: 0;
+    padding: 0;
+}
+.page-node-29 .seccion-md-dos {
+    background-color: #f1c107;  
+}
+.conosur-block {
+    position: relative;
+}
+.conosur-block .block-body{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    height: 58px;
+    width: 282px;
+    padding: 15px 0 0 20px;
+    background-image: url(img/btn_foursquare.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+     background-size: auto 100%;
+     color: #7d7d7d;
+     font-size: 22px;
+    font-weight: 200; 
+}
+@media (min-width: 1200px) { 
+} 
+@media (min-width: 992px) and (max-width: 1199px){
+}
+@media (max-width: 992px) {
+}
+@media (min-width: 768px) and (max-width: 979px) {
+}
+@media (min-width: 768px) {
+    .for-hv{
+        position: absolute;
+right: 0;
+top: -115px;
+    }
+    .styleimg-right .block-image img{
+        height: 100%;
+        width: auto;
+    } 
+}
+@media (max-width: 768px) { 
+    .styleimg-right .block-image img{
+    width:  100%;
+    height:  auto;
+} 
+}
+
+@media (max-width: 767px) {
+}
+@media (max-width: 480px) {
+    
+}
+#menu-lateral li a.active,
+#menu-lateral li a:hover{
+     background-image: url(img/btn_menu.png);
+     background-repeat: no-repeat;
+     background-position: right center;
+     border: 1px dashed #ffffff;
+     border-color: #ffffff;
+     -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: none!important;
+ }
+ #menu-lateral li:hover{
+     background-color: none!important;
+ }

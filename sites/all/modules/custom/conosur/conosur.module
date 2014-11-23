@@ -55,6 +55,15 @@ function conosur_block_info(){
         'info' => t('bloque registrar usuarios'),
         'cache' => DRUPAL_NO_CACHE,
     );
+    // Declaring your block.
+    $block['hoja_vidad_block'] = array(
+        'info' => t('Save hoja de vida'),
+        'cache' => DRUPAL_CACHE_GLOBAL,
+    );
+    $block['block_map_locales'] = array(
+        'info' => t('Bloque mapas locales'),
+        'cache' => DRUPAL_CACHE_GLOBAL,
+    );
     return $block;
 }
 /**
@@ -136,6 +145,29 @@ function conosur_block_view($block_key){
                 )    
             );
             break;
+       case 'hoja_vidad_block':
+           $block['content'] = drupal_get_form('upload_hv_form');
+           break;
+       case 'block_map_locales':
+           $variables = array();
+           //drupal_add_js('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', 'external');
+            
+           $block['content'] = array(
+            '#theme' => 'block_map_locales',
+            '#items' => $variables,
+            '#attached' => array(
+                'js' => array(
+                    array(
+                            'data' => 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
+                            'type' => 'external',
+                          ),
+                    array(
+                        'data' => drupal_get_path('module', 'conosur') . '/js/conosur_map.js',
+                      ),
+                    ),
+                )    
+            );
+           break;
     }   
     return $block;
 }
@@ -147,7 +179,89 @@ function conosur_theme(){
                 'items' => array()
                 )
             ),
+         'block_map_locales' => array(
+            'template' => 'theme/block_map_locales',
+            'variables' => array(
+                'items' => array()
+                )
+            ),
+        
         );
+}
+
+/**
+ * Implements hook_block_configure().
+ */
+function upload_hv_form ($form, &$form_state) {
+    $form = array();
+    $form['im-container'] = array(
+        '#prefix'=>'<div class="form-hv">
+            <div id="im-area">',
+        '#suffix'=>'</div>',
+        );
+    $form['image_file'] = array(
+        '#type' => 'file',
+        );
+
+    $form['upload'] = array(
+        '#type' => 'submit',
+        '#value' => t('CARGAR ARCHIVO'),
+        '#submit' => array('upload_image'),
+        '#ajax'=> array(
+            'callback'=>'upload_image',
+            'wrapper'=> 'im-area',
+            'method'=> 'replace',
+            'effect'=> 'fade',
+            ),
+        '#suffix'=>'</div>',
+         );
+    $form['preview'] = array(
+        '#type' => 'button', 
+        '#value' => t('SUBIR HV'), 
+        '#weight' => 19,
+        '#prefix'=>'<div class="link-form-hv">',
+        '#suffix'=>'</div>',
+        '#ajax' => array (
+            'callback' => 'after_ajax_hv_callback',
+            ),
+        );
+    $form['#attached']['js'] = array (
+        array (
+            'type'  => 'file',
+	    'data' => drupal_get_path('module', 'conosur') . '/js/ajax_hv.js',
+            ),
+	);
+    return $form;
+}
+function upload_image($form, $form_state) {
+    global $user;
+    $file = file_save_upload('image_file', array('file_validate_extensions' => array('pdf doc')), "public://hv/",$replace = FILE_EXISTS_REPLACE);
+    if ($file && $file->filemime == 'application/pdf') {
+        $file->status=FILE_STATUS_PERMANENT;
+        file_save($file);
+        $data_c_t = array();
+        $data_c_t['uid'] = $user->uid;
+        $data_c_t['fid'] = $file->fid;
+        $res_titulos_ter = db_insert("conosur_hv", array('uid'))->fields($data_c_t)->execute();
+        $form['im-container']=array(
+            '#title'=>t('Preview:'),
+            '#prefix'=>'<div id="im-area">',
+            '#markup'=>$file->filename,
+            '#suffix'=>'</div>',
+            );
+        drupal_set_message('El archiov se a cargado corretamente pronto nos comenucaremos con usted!');
+    } else {
+        drupal_set_message('No file uploaded.');
+    }
+    return $form['im-container'];
+}
+function after_ajax_hv_callback($form, &$form_state) {
+    $commands = array();
+    $commands[] = array (
+            'command' => 'afterAjaxCallbackhv',
+            'selectedValue' => $form_state['values']['preview'],
+    );
+    return array('#type' => 'ajax', '#commands' => $commands);
 }
 
 function get_type_node ($nid) {
